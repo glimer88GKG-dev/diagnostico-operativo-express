@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diagnóstico Operativo Express US$450 — Glimer</title>
+  <meta name="description" content="Diagnóstico operativo express US$450 para constructoras, metalmecánica e instaladores en Costa Rica. 1 entrega: sesión, informe y devolución en 5–7 días hábiles." />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Live en GitHub Pages; noindex hasta form/email comercial cableado -->
+  <style>
+    :root {
+      --bg: #0F1419;
+      --card: #1A222C;
+      --text: #E8EEF4;
+      --muted: #9AA8B5;
+      --accent: #D4A017;
+      --accent-hover: #E8B84A;
+      --border: #2A3542;
+      --steel: #5B7C99;
+      --warn-badge: #F0C14A;
+      --warn-bg: #2A220E;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+    .brand-mark {
+      width: 10px;
+      height: 28px;
+      background: var(--accent);
+      border-radius: 2px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .brand-text { line-height: 1.2; }
+    .brand-name {
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    .brand-legal {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--warn-badge);
+      border: 1px solid #5c4a1a;
+      background: var(--warn-bg);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.25; margin: 0 0 0.75rem; font-weight: 700; }
+    .sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 0.75rem; }
+    .dolor { color: var(--text); font-size: 1rem; margin: 0 0 1.25rem; }
+    .price {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+    .price span { color: var(--accent); }
+    .alcance {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 0 1.25rem;
+    }
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #0F1419;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.85rem 1.25rem;
+      border-radius: 8px;
+      margin: 0 0 1.5rem;
+    }
+    .cta:hover { background: var(--accent-hover); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin: 1.25rem 0;
+    }
+    h2 { font-size: 1.05rem; margin: 0 0 0.75rem; font-weight: 600; }
+    ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    li { margin: 0.35rem 0; }
+    .steps { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+      margin: 0.85rem 0;
+      color: var(--muted);
+    }
+    .steps li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--steel);
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+    .steps strong { color: var(--text); display: block; margin-bottom: 0.15rem; }
+    label { display: block; font-size: 0.85rem; color: var(--muted); margin: 0.75rem 0 0.3rem; }
+    input, textarea {
+      width: 100%;
+      padding: 0.65rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #121820;
+      color: var(--text);
+      font: inherit;
+    }
+    button {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.85rem;
+      border: 0;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #0F1419;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    button:not(:disabled):hover { background: var(--accent-hover); }
+    .note { font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; }
+    .backup {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .backup strong { color: var(--text); }
+    footer { margin-top: 2.5rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1.25rem; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand" aria-label="Glimer">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div class="brand-text">
+        <div class="brand-name">Glimer</div>
+        <div class="brand-legal">Operational Consulting</div>
+      </div>
+    </header>
+
+    <h1>Ordená los cuellos de tu operación antes de comprar más software.</h1>
+    <p class="sub">Para constructoras, metalmecánica e instaladores en Costa Rica. Dueños y gerentes de operaciones, planta o proyectos.</p>
+    <p class="dolor">Cuando el volumen y la complejidad crecen más rápido que los procedimientos y la visibilidad.</p>
+    <p class="price"><span>US$450</span> — Diagnóstico Operativo Express (1 entrega)</p>
+    <p class="alcance">1 entrega = sesión + informe con 2–3 prioridades + devolución (5–7 días hábiles desde kickoff).</p>
+    <a class="cta" href="#contacto">Agendar conversación 15–20 min</a>
+
+    <div class="card">
+      <h2>Cómo funciona</h2>
+      <ol class="steps">
+        <li>
+          <div>
+            <strong>Call de 15–20 min</strong>
+            Conversación corta para ver si hay fit. Sin compromiso.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Sesión + insumos livianos</strong>
+            Diagnóstico en taller, obra o servicio con lo mínimo necesario.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Informe + devolución</strong>
+            Mapa de cuellos, 2–3 prioridades y sesión de cierre en 5–7 días hábiles.
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Qué incluye</h2>
+      <ul>
+        <li>Sesión + informe + devolución en una entrega</li>
+        <li>Mapa de fricción operativa (taller, obra o servicio)</li>
+        <li>2–3 prioridades claras — no un manual infinito</li>
+        <li>Recomendación de tablero mínimo / siguientes pasos (SOPs ligeros)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Qué no incluye</h2>
+      <ul>
+        <li>Implementación completa, licencias o ERP llave en mano</li>
+        <li>Pauta, ads o promesas de ventas</li>
+        <li>Retainer u horas ilimitadas</li>
+      </ul>
+    </div>
+
+    <div class="card" id="contacto">
+      <h2>Agendar conversación (15–20 min)</h2>
+      <p class="note">Formulario inactivo hasta cablear destino de leads (CRM / email). Página live en GitHub Pages; noindex hasta cablear leads.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" autocomplete="name" required disabled />
+        <label for="empresa">Empresa</label>
+        <input id="empresa" name="empresa" required disabled />
+        <label for="cargo">Cargo</label>
+        <input id="cargo" name="cargo" disabled />
+        <label for="email">Email laboral</label>
+        <input id="email" name="email" type="email" autocomplete="email" required disabled />
+        <label for="tel">Teléfono (opcional)</label>
+        <input id="tel" name="tel" type="tel" disabled />
+        <label for="cuello">¿Cuál es el cuello actual?</label>
+        <textarea id="cuello" name="cuello" rows="3" disabled></textarea>
+        <button type="submit" disabled title="Inactivo hasta cablear destino de leads">Solicitar conversación</button>
+      </form>
+      <p class="note">Sin spam. Te respondemos cuando Comercial defina SLA (pendiente). Datos solo para contacto comercial de Glimer Operational Consulting.</p>
+      <p class="backup">
+        <strong>Canal de respaldo:</strong> correo comercial pendiente de Admin/fundador — no inventado. Cuando exista, se cableará aquí y en el form.
+      </p>
+    </div>
+
+    <footer>
+      Glimer Operational Consulting · El Portador de Luz · Costa Rica<br />
+      Marketing &amp; Diseño · Agencia B2B · GitHub Pages · noindex · cero ads
+    </footer>
+  </main>
+</body>
+</html>
